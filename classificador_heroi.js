@@ -4,9 +4,6 @@
 function classificarHeroi(nome, xp) {
     let nivel;
 
-const nomeHeroi = prompt("Digite o nome do herói:");
-const xpHeroi = parseInt(prompt("Digite a quantidade de experiência (XP) do herói:"), 10);
-
     // Estruturas de decisão para classificar o nível com base na experiência
     if (xp < 1000) {
         nivel = "Ferro";
@@ -29,6 +26,10 @@ const xpHeroi = parseInt(prompt("Digite a quantidade de experiência (XP) do her
     // Retorna a mensagem com o nome e nível do herói
     return `O Herói de nome ${nome} está no nível de ${nivel}.`;
 }
+
+// Coleta de dados do usuário
+const nomeHeroi = prompt("Digite o nome do herói:");
+const xpHeroi = parseInt(prompt("Digite a quantidade de experiência (XP) do herói:"), 10);
 
 // Saída
 console.log(classificarHeroi(nomeHeroi, xpHeroi));
